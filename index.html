@@ -640,10 +640,36 @@
             </li>
           </ul>
         </div>
+        <!-- Fotter part 3 -->
+          <form class="form-footer">
+      <p class="header-footer">Subscribe</p>
+          <label class="subscribe label-footer" for="Subscribe">
+          <span class="footer-wraper-part-three">
+            <span class="footer-mail-text">E-mail</span>
+            <input class="footer-mail" 
+          name="user_mail"
+          type="text" 
+          reguired
+          pattern="[a-zA-Za-яА-ЯіІїЇєЄ']+"/>
+        </label>
+        <button class="button-footer" 
+         type="submit">Subscribe
+          <svg
+          class="footer-icon"
+          width="24"
+          height="24"
+          aria-label="icon-telegram">
+            <use href="./images/icons.svg#Frame-3"></use>
+          </svg>
+        </button>    
       </div>
+      </form>
+
+    
+  </div>
     </footer>
     <!-- Modal -->
-    <div class="dackdrop" data-modal>
+    <div class="dackdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-modal-close" type="button" data-modal-close>
           <svg class="modal-close-icon" aria-label="close" width="8" height="8">
@@ -652,49 +678,69 @@
         </button>
         <!-- Modal form -->
         <form class="modal-form">
-          <p class="modal-descrip">Leave your contacts and we will call you back</p>
-
+          <p class="modal-descrip">
+            Leave your contacts and we will call you back
+          </p>
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Name</span>
-            <div class="modal-form-input-wraper">
-            <input
-              type="text"
-              name="user_name"
-              class="modal-form-input"
-              required
-              pattern="^(a-zA-Za-яА-Я)+"
-              minlength="2"
-            />
+            <span class="modal-form-input-wraper">
+              <input
+                type="text"
+                name="user_name"
+                class="modal-form-input"
+                required
+                pattern="[a-zA-Za-яЯ-Аа]+"
+                minlength="2"
+              />
+              <svg
+                class="modal-svg"
+                width="12"
+                hight="12"
+                aria-label="icon-mail"
+              >
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </span>
           </label>
-          <svg class="modal_svg"
-            width="12"
-            hight="12"
-            aria-label="icon-mail">
-              <use href="./images/icons.svg#icon-Vector"></use>
-            </svg>
-        </div>
 
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Phone</span>
-            <input
-              type="tel"
-              name="user_phone"
-              class="modal-form-input"
-              required
-              pattern="(0-9){3}-(0-9){3}-(0-9){2}-(0-9){2}"
-              title="xxx-xxx-xx-xx"
-            />
+            <span class="modal-form-input-wraper">
+              <input class="modal-form-input"
+                type="tel"
+                name="user_phone" 
+                required
+                pattern="(0-9){3}-(0-9){3}-(0-9){2}-(0-9){2}"
+                title="xxx-xxx-xx-xx"
+              />
+              <svg
+                class="modal-svg"
+                width="12"
+                hight="12"
+                aria-label="icon-mail"
+              >
+                <use href="./images/icons.svg#icon-Vector-1"></use>
+              </svg>
+            </span>
           </label>
 
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Email</span>
-           
-            <input
-              type="text"
-              name="user_mail"
-              class="modal-form-input"
-              required
-            />
+            <span class="modal-form-input-wraper">
+              <input class="modal-form-input"
+                type="text"
+                name="user_mail"
+                required
+              />
+              <svg
+                class="modal-svg"
+                width="12"
+                hight="12"
+                aria-label="icon-mail"
+              >
+                <use href="./images/icons.svg#icon-Vector-2"></use>
+              </svg>
+            </span>
           </label>
 
           <label>
@@ -706,13 +752,19 @@
             ></textarea>
           </label>
 
-          <input id="user-policy" type="checkbox" 
-          name="user_policy" class="modal-form-check" />
-          <label class="modal-form-check-desc"
-            for="user-policy">
-           <span class="modal-form-input-desc">I accept the terms and conditions of the</span> 
-            <a href="#">Privacy Policy</a>
+          <input
+            id="user-policy"
+            type="checkbox"
+            name="user_policy"
+            class="modal-form-check visually-hidden"
+          />
+          <label class="modal-form-check-desc" for="user-policy">
+            <span class="modal-form-input-desc-checkbox"
+              >I accept the terms and conditions of the</span
+            >
+            <a href="" class="modal-form-input-desc-link">Privacy Policy</a>
           </label>
+
           <button type="submit" class="modal-form-button">Send</button>
         </form>
       </div>
