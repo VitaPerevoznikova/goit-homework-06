@@ -671,12 +671,13 @@
       </div>
     </footer>
     <!-- Modal -->
-    <div class="modal dackdrop is-hidden" data-modal>
-      <div class="">
+    <div class=" dackdrop is-hidden" data-modal>
+      <div class="modal">
         <p class="modal-descrip">
           Leave your contacts and we will call you back
         </p>
         <form class="modal-form">
+          
           <div class="modal-form-container">
             <label class="modal-form-field" for="user-name">
               <span class="modal-form-input-desc">Name</span>
@@ -701,6 +702,7 @@
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
             </div>
+          </div>
 
             <div class="modal-form-container">
               <label class="modal-form-field" for="user-phone">
@@ -764,27 +766,28 @@
             <div class="modal-form-checkbox">
               <input
                 class="modal-form-check visually-hidden"
-                id="user-policy"
+                id="user-privacy"
                 type="checkbox"
                 name="user-privacy"
                 value="true"
               />
 
               <label class="modal-form-check-desc" for="user-privacy">
-                I accept the terms and conditions of the
+               
                 <span class="modal-form-input-desc-checkbox">
-                  <svg class="icon-checkbox" width="10" height="8">
-                    <use href="./images/icons.svg#icon-Vector-4"></use>
-                  </svg>
-                </span>
-                <a href="" id="user-privacy" class="modal-form-input-desc-link"
+                  <svg class="icon-checkbox" 
+                  width="10" 
+                  height="8">
+                    <use href="./images/icons.svg#icon-Frame-3"></use>
+                  </svg> 
+              </span>
+                I accept the terms and conditions of the
+                <a href="#" class="modal-form-input-desc-link"
                   >Privacy Policy</a
                 >
               </label>
             </div>
-
-            <button type="submit" class="modal-form-button">Send</button>
-          </div>
+           <button type="submit" class="modal-form-button">Send</button>
         </form>
 
         <button class="button-modal-close" type="button" data-modal-close>
