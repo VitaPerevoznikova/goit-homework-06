@@ -778,9 +778,9 @@ margin-right: 8px;
   opacity: 0;
 }
 .modal-form-check:checked + .modal-form-check-desc >.modal-form-desc-checkbox{
-background-color: var(--ocean);
+background-color:  var(--ocean);
 border: none;
-fill: var(--white);
+fill:  var(--white);
 border-color: var(--ocean);
 }
 .modal-form-desc-link{
