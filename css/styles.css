@@ -753,32 +753,37 @@ border-color: var(--iris);
   margin-bottom: 24px;
 }
 .modal-form-check-desc{
+  display: inline-flex;
+  align-items: center;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
 }
-.modal-form-input-desc-checkbox{
-width: 16px;
-height: 16px;
-border: 1px solid #2e2f42;
-border-radius: 2px;
+.modal-form-desc-checkbox{
 display: inline-flex;
 align-items: center;
 justify-content: center;
 fill: transparent;
+width: 16px;
+height: 16px;
+border: 1px solid #2e2f42;
+border-radius: 2px;
+cursor: pointer;
 margin-right: 8px;
 }
-.modal-form-check:checked + .modal-form-check-desc >.icon-checkbox{
+.icon-checkbox-svg{
+  fill: transparent;
+  opacity: 0;
+}
+.modal-form-check:checked + .modal-form-check-desc >.modal-form-desc-checkbox{
 background-color: var(--ocean);
 border: none;
 fill: var(--white);
 border-color: var(--ocean);
 }
-.icon-checkbox{
-  cursor: pointer;
-}
-.modal-form-input-desc-link{
+.modal-form-desc-link{
   color: var(--iris);
   margin-left: 3px;
 }
